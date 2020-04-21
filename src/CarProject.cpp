@@ -1,12 +1,18 @@
 //******************************************************************
-// Project:	Car Driving Simulator in OpenGL
+// Project:			Interactive Game Using OpenGL
+// Last Revised:	April 07, 2020
+// Class:			CPSC 3710 Computer Graphics
+// Group Members:	Steven Trinh, Blake McLachlin, George Chelariu,
+//					Nwabunor Onwuanyi
+// About:			Project for our computer graphics class.
+//					See project.pdf for more info.
 //******************************************************************
 
 //******************************************************************
 // Controls:
-// a  : forwards	F1: to be implemented
-// z  : backwards	F2: to be implemented
-// q  : turn left	F3: to be implemented
+// a  : forwards	F1: Look forward
+// z  : backwards	F2: Look right
+// q  : turn left	F3: Look left
 // w  : turn right	F4: Go back to default car view
 // F5: Move camera back (+x) and right (-z) of vehicle
 // F6: Move camera front (-x) and right (-z) of vehicle
@@ -57,7 +63,6 @@ bool paused = false;
 bool f1 = false, f2 = false, f3 = false, f4 = false, f5 = false,
 f6 = false, f7 = false, f8 = false, f9 = false,
 f10 = false, f11 = false, f12 = false;
-
 /*****************Global Variables End*******************/
 
 GLvoid Transform(GLfloat Width, GLfloat Height)
@@ -1072,18 +1077,18 @@ void reshape(GLsizei width, GLsizei height) {
 
 /* Main function: GLUT runs as a console application starting at main() */
 int main(int argc, char** argv) {
-	glutInit(&argc, argv);								// Initialize GLUT
-	glutInitDisplayMode(GLUT_DOUBLE);					// Enable double buffered mode
-	glutInitWindowSize(Window_Width, Window_Height);    // Set the window's initial width & height
-	glutInitWindowPosition(50, 50);						// Position the window's initial top-left corner
-	glutCreateWindow(PROGRAM_TITLE);					// Create window with the given title
-	glutDisplayFunc(display);							// Register callback handler for window re-paint event
-	glutIdleFunc(display);								// If nothing to do, refresh screen
-	glutReshapeFunc(reshape);							// Register callback handler for window re-size event
-	glutKeyboardFunc(NormalKey);						// Register callback for normal key events
-	glutSpecialFunc(mySpecialFunc);						// Register callback for special key events
+	glutInit(&argc, argv);				    	// Initialize GLUT
+	glutInitDisplayMode(GLUT_DOUBLE);		    	// Enable double buffered mode
+	glutInitWindowSize(Window_Width, Window_Height);    	// Set the window's initial width & height
+	glutInitWindowPosition(50, 50);				// Position the window's initial top-left corner
+	glutCreateWindow(PROGRAM_TITLE);			// Create window with the given title
+	glutDisplayFunc(display);				// Register callback handler for window re-paint event
+	glutIdleFunc(display);					// If nothing to do, refresh screen
+	glutReshapeFunc(reshape);				// Register callback handler for window re-size event
+	glutKeyboardFunc(NormalKey);				// Register callback for normal key events
+	glutSpecialFunc(mySpecialFunc);				// Register callback for special key events
 
-	glEnable(GL_DEPTH_TEST);							// Enable depth testing
-	glutMainLoop();										// Enter the infinite event-processing loop
+	glEnable(GL_DEPTH_TEST);				// Enable depth testing
+	glutMainLoop();						// Enter the infinite event-processing loop
 	return 0;
 }
