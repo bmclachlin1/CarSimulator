@@ -2,7 +2,7 @@
 
 Car driving simulator made using OpenGL and C++.
 
-Controls:
+# Controls:
 a  : forwards	F1: Look forward
 z  : backwards	F2: Look right
 q  : turn left	F3: Look left
