@@ -2,6 +2,8 @@
 
 Car driving simulator made using OpenGL and C++.
 
+You must have OpenGL and glut installed for it to run. I recommend making a project on Visual Studio and running it from there.
+
 # Controls:
 a: forwards<br>
 z: backwards<br>
