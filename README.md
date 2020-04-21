@@ -4,6 +4,8 @@ Car driving simulator made using OpenGL and C++.
 
 You must have OpenGL and glut installed for it to run. I recommend making a project on Visual Studio and running it from there.
 
+A good reference for doing this on Windows 10 is https://www.absingh.com/opengl/
+
 # Controls:
 a: forwards<br>
 z: backwards<br>
