@@ -1,11 +1,5 @@
 //******************************************************************
-// Project:			Interactive Game Using OpenGL
-// Last Revised:	April 07, 2020
-// Class:			CPSC 3710 Computer Graphics
-// Group Members:	Steven Trinh, Blake McLachlin, George Chelariu,
-//					Nwabunor Onwuanyi
-// About:			Project for our computer graphics class.
-//					See project.pdf for more info.
+// Project:		Car Driving Simulator in OpenGL
 //******************************************************************
 
 //******************************************************************
