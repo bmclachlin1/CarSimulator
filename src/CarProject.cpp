@@ -1,5 +1,5 @@
 //******************************************************************
-// Project:	OpenGL Car Driving Simulator
+// Project:	Car Driving Simulator in OpenGL
 //******************************************************************
 
 //******************************************************************
@@ -504,7 +504,7 @@ void drawSphereBuilding(int i, int j)
 
 	// draw small cylinder on top
 	glPushMatrix();
-
+	
 	glTranslatef(i + 18.0f, 8.9f, j - 9.0f);
 
 	glScalef(3, 3, 3);
